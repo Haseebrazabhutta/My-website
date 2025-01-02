@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGES.edu.pk</title>
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="nav-bar">
+        <li class="logo"><a href="#"><img src="images/logo.png">Alliance Global Educational Services</a></li>
+        <input type="checkbox" id="check"> <span class="menu">
+          <li><a href="#">Home</a></li>
+          <li class="dropdown"> <a href="javascript:void(0)" onclick="toggleDropdown(this)">Study Destination <i
+                class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">USA</a></li>
+              <li><a href="#">Canada</a></li>
+              <li><a href="#">Australia</a></li>
+              <li><a href="#">Europe</a></li>
+            </ul>
+          </li>
+          <li><a href="#"> Our Services</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Contact</a></li> <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+        </span> <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <div id="hero-section">
+    <div class="background-blur"></div>
+    <div id="typewriter-effect">
+      <span id="typed"></span>
+    </div>
+  </div>
+  <!-- section for welcome message -->
+  <section>
+    <h1 class="wel">Welcome to Alliance Global Educational Services</h1>
+    <div class="container">
+      <div class="content">
+        <h2>Welcome to AGES Student Consultancy</h2>
+        <p>Welcome to AGES Student Consultancy, your trusted partner on the journey to higher education and
+          international experiences. We are dedicated to helping students achieve their dreams of studying abroad by
+          providing comprehensive, personalized support throughout the entire application process.</p>
+      </div>
+      <div class="image-container">
+        <img src="images/welcome.png" alt="Students in a study abroad consultation session">
+      </div>
+    </div>
+  </section>
+  <!-- section for form -->
+  <section class="form-section">
+    <div class="form-container">
+      <h2>We Need the Following Details</h2>
+      <h1>Please Fill Out the Following FORM</h1>
+      <form action="form.php" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name<span class="required">*</span></label>
+            <input type="text" placeholder=" Enter your Name " id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email ID<span class="required">*</span></label>
+            <input type="email" placeholder=" Enter your Email ID " id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone No<span class="required">*</span></label>
+            <input type="tel" placeholder=" Enter your Phone Number " id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="country">Country of Interest<span class="required">*</span></label>
+            <input type="text" placeholder="Enter your preferred Country" id="country" name="country" required>
+          </div>
+          <div class="form-group">
+            <label for="qualification">Qualification<span class="required">*</span></label>
+            <input type="text" placeholder="Enter your Qualification" id="qualification" name="qualification" required>
+          </div>
+          <div class="form-group">
+            <label for="percentage">Percentage<span class="required">*</span></label>
+            <input type="text" placeholder="Select percentage in last degree" id="percentage" name="percentage"
+              required>
+          </div>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </section>
+  <section class="why-section">
+    <div class="container">
+      <div class="content">
+        <h2>Why Choose Us?</h2>
+        <p>At AGES Student Consultancy, we understand that the process of applying to study abroad can be overwhelming.
+          That's why we offer a range of services to help you navigate the application process and make your dream of
+          studying abroad a reality.</p>
+      </div>
+      <div class="image-container">
+        <img src="images/why.png" alt="Students discussing study abroad options">
+      </div>
+    </div>
+  </section>
+  <!-- Our testimonials -->
+  <section class="our-testimonial-heading">
+    <h1>What Clients Say</h1>
+    <div class="testimonials-section">
+      <header class="section-header">
+      </header>
+      <div class="owl-carousel owl-theme testimonials-container">
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>With Alliance</h2>
+            </div>
+            <p>I always dreamt of studying abroad, but the process seemed so overwhelming. Thanks to Alliance Global
+              Educational Services, all my concerns were resolved, and today I’m pursuing my degree in the UK. Highly
+              recommended! 🌟</p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="images/blank-profile-picture.png">
+            </div>
+            <div class="profile-desc">
+              <span>Ayesha khan</span>
+              <span>Student</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item1 Ends -->
+
+        <!-- Item2 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>With Alliance</h2>
+            </div>
+            <p>I was worried about my student visa rejection, but Alliance Global Educational Services handled my case
+              so professionally that I got it approved. A big thumbs up to the entire team! 👍</p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="images/blank-profile-picture.png">
+            </div>
+            <div class="profile-desc">
+              <span>Fazain Ali</span>
+              <span>Student</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item2 Ends -->
+
+        <!-- Item3 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>With Alliance</h2>
+            </div>
+            <p>I approached Alliance Global Educational Services for my brother’s admission in Europe, and I’m so glad I
+              did. Their team is incredibly supportive and knowledgeable. Thank you for all the help!</p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="images/blank-profile-picture.png">
+            </div>
+            <div class="profile-desc">
+              <span>Sarah Malik</span>
+              <span>Client</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item3 Ends -->
+
+        <!-- Item4 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>With Alliance</h2>
+            </div>
+            <p>The guidance and professionalism of Alliance Global Educational Services truly impressed me. From
+              university selection to visa processing, they were with me at every step. Great team, excellent service!
+            </p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="images/blank-profile-picture.png">
+            </div>
+            <div class="profile-desc">
+              <span>Maria Ahmad</span>
+              <span>Student</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item4 Ends -->
+
+        <!-- Item5 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>With Alliance</h2>
+            </div>
+            <p>Alliance Global Educational Services helped me secure admission in one of the top universities in Canada.
+              I couldn't have done it without their support. Truly the best consultants in the market! Thank you! 🇨🇦✨
+            </p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="images/blank-profile-picture.png">
+            </div>
+            <div class="profile-desc">
+              <span>Hassan Ali</span>
+              <span>Student</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item5 Ends -->
+
+        <!-- Item6 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>With Alliance</h2>
+            </div>
+            <p>Great service, great people! Alliance Global Educational Services is trustworthy and always ready to
+              assist you. I recommend them to everyone looking for reliable consultants.🌟</p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="images/blank-profile-picture.png">
+            </div>
+            <div class="profile-desc">
+              <span>Kamran Siddiqui</span>
+              <span>Client</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item6 Ends -->
+      </div>
+      <!-- Owl Carousel Slider Ends -->
+
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+      <!-- Part 1: Logo and Text -->
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <p> <strong>AGES</strong> Consultants aims to prepare students for
+          success in other continents and for productive
+          roles as professionals and intellectuals in
+          society.</p>
+      </div>
+      <!-- Part 2: Social Media Links with Icons -->
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <a href="https://facebook.com"><i class="fab fa-facebook"></i> </a>
+        <a href="https://instagram.com"><i class="fab fa-tiktok"></i></a>
+        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com"><i class="fab fa-youtube"></i></a>
+        <a href="https://instagram.com"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <!-- Part 3: Contact Info with Icons -->
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-phone"></i> +92 328 2111006</p>
+        <p><i class="fas fa-envelope"></i>query@ages.bhuttagroup.com</p>
+        <p><i class="fas fa-map-marker-alt"></i>1
+          st Floor 115, Centry Tower, Kalma Chowk, Gulberg
+          III, Lahore</p>
+      </div>
+      <!-- Part 4: Map -->
+      <div class="footer-map">
+        <h3>Our Location</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27212.757701390765!2d74.30497053876213!3d31.507822137537552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919045a28ff1d39%3A0xf71e739b84b3c3c!2sGulberg%20III%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1735798682872!5m2!1sen!2s"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© Copyright 2025 | Alliance Global Educational Services. All Right Reserved.</p>
+    </div>
+  </footer>
+  <!--   *****   JQuery Link   *****   -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <!--   *****   Owl Carousel js Link  *****  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
